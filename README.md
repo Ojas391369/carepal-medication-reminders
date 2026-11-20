@@ -107,6 +107,12 @@ Key design decisions:
 
 ## AI tools used
 
-I used **Claude (Anthropic)** to research the approach (Web Push/VAPID, iOS push limits, `node:sqlite`), draft the code, and write the tests and this README. I reviewed the code and can explain each part. The design decisions above are mine to defend.
+## AI tools used
+
+I used **Claude (Anthropic)** as my main development partner on this assignment. It researched the approach (Web Push and VAPID keys, iOS push limits, `node:sqlite`), proposed the architecture and design decisions described above, and wrote the code, the tests and this README.
+
+My part was running and testing the app on my own machine, checking each requirement against the assignment, and reporting problems back so they could be fixed. For example, I hit a push-registration error in my browser, a mismatch between the browser's saved subscription and the server after resetting the data folder, and repeated notifications that did not pop up. I also decided what to include and what to leave out for a first version.
+
+I have read through the main files (`schedule.js`, `scheduler.js`, `service.js` and `app.js`) so I can explain how the schedule, adherence, stock and reminder logic work. The README's "What I would build next" section lists what is still a prototype.
 
 > This is a demo for an assignment, not a medical device. Do not use it to manage real treatment.
